@@ -3,14 +3,14 @@
    height: 73px;
    display: flex;
    justify-content: center;
-   position: fixed;
+   position: relative;
    width: 100vw;
    &__background {
       background: rgba(243, 229, 172, 0.2);
       backdrop-filter: blur(15px);
       border-bottom: 1px solid #fefefe70;
       border-top: 1px solid #fefefe70;
-      position: fixed;
+      position: absolute;
       left: 0;
       right: 0;
       height: 71px;

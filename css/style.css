@@ -130,12 +130,13 @@ body {
   background: linear-gradient(179.64deg, #121111 0.28%, #0D0C0C 99.66%);
   height: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .page {
   max-width: 1290px;
   width: 100%;
-  padding: 250px 5px 40px;
+  padding: 50px 5px 40px;
   margin: 0 auto;
 }
 
@@ -191,6 +192,10 @@ img {
           align-items: flex-start !important;
 }
 
+.mobile {
+  display: none;
+}
+
 .header {
   margin-top: 65px;
   height: 73px;
@@ -200,7 +205,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: fixed;
+  position: relative;
   width: 100vw;
 }
 
@@ -210,7 +215,7 @@ img {
           backdrop-filter: blur(15px);
   border-bottom: 1px solid #fefefe70;
   border-top: 1px solid #fefefe70;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   height: 71px;
@@ -613,4 +618,54 @@ img {
 .about .how__icon {
   min-width: 65px;
   height: 65px;
+}
+
+@media screen and (max-width: 576px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .about__dragon {
+    position: relative;
+    height: 408px;
+    width: 408px;
+  }
+  .about__dragon::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url("../assets/images/about__dragon.png");
+    background-size: cover;
+  }
+  .header {
+    margin-top: 40px;
+  }
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__how .about__wrapper {
+    gap: 20px;
+  }
+  .about__item {
+    width: 100%;
+  }
+  .about__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    gap: 15px;
+  }
+  .page {
+    overflow: hidden;
+  }
 }

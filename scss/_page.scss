@@ -2,11 +2,12 @@ body {
    background: linear-gradient(179.64deg, #121111 0.28%, #0D0C0C 99.66%);
    height: 100%;
    min-height: 100vh;
+   overflow-x: hidden;
 }
 .page {
    max-width: 1290px;
    width: 100%;
-   padding: 250px 5px 40px;
+   padding: 50px 5px 40px;
    margin: 0 auto;
 }
 .container {
@@ -49,4 +50,7 @@ img {
 }
 .align-items-start {
    align-items: flex-start !important;
+}
+.mobile {
+   display: none;
 }

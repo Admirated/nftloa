@@ -1,0 +1,43 @@
+@media screen and (max-width: 576px) {
+   .desktop {
+      display: none !important;
+   }
+   .mobile {
+      display: block !important;
+   }
+   .about__dragon {
+      position: relative;
+      height: 408px;
+      width: 408px;
+      &::after {
+         content: "";
+         position: absolute;
+         inset: 0px;
+         top: 0px;
+         left: 0px;
+         z-index: -1;
+         background-image: url('../assets/images/about__dragon.png');
+         background-size: cover;
+      }
+   }
+   .header {
+      margin-top: 40px;
+   }
+   .about__wrapper {
+      flex-direction: column;
+   }
+   .about__how .about__wrapper {
+      gap: 20px;
+   }
+   .about__item {
+      width: 100%;
+   }
+   .about__buttons {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 15px;
+   }
+   .page {
+      overflow: hidden;
+   }
+}
