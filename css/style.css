@@ -196,6 +196,22 @@ img {
   display: none;
 }
 
+.w30 {
+  width: 30% !important;
+}
+
+.w40 {
+  width: 40% !important;
+}
+
+.w60 {
+  width: 60% !important;
+}
+
+.w70 {
+  width: 70% !important;
+}
+
 .header {
   margin-top: 65px;
   height: 73px;
@@ -621,6 +637,23 @@ img {
   height: 65px;
 }
 
+.beasts__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 100px;
+}
+
+.beasts__card {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.beasts__card:not(:first-child) {
+  margin-left: -105px;
+}
+
 @media screen and (max-width: 576px) {
   .desktop {
     display: none !important;
@@ -668,5 +701,31 @@ img {
   }
   .page {
     overflow: hidden;
+  }
+  .about__item.w40, .about__item.w60 {
+    width: 100% !important;
+  }
+  .beasts__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 69px;
+  }
+  .beasts__card {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .beasts__card:nth-child(2) {
+    margin-left: -74px;
+  }
+  .beasts__card:nth-child(3) {
+    margin-left: -160px;
   }
 }

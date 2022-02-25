@@ -40,4 +40,25 @@
    .page {
       overflow: hidden;
    }
+   .about__item.w40, .about__item.w60 {
+      width: 100% !important;
+   }
+   .beasts__cards {
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      left: 69px;
+   }
+   .beasts__card {
+      width: 400px;
+      height: 400px;
+      transform: scale(1.4);
+      &:nth-child(2) {
+         margin-left: -74px;
+      }
+      &:nth-child(3) {
+         margin-left: -160px;
+      }
+   }
+
 }

@@ -1,0 +1,11 @@
+.beasts__cards {
+   display: flex;
+   position: relative;
+   left: 100px;
+}
+.beasts__card {
+   transform: scale(2);
+   &:not(:first-child) {
+      margin-left: -105px;
+   }
+}
