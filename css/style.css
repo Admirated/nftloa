@@ -631,14 +631,14 @@ img {
   .about__dragon {
     position: relative;
     height: 408px;
-    width: 408px;
+    width: 447px;
   }
   .about__dragon::after {
     content: "";
     position: absolute;
     inset: 0px;
-    top: 0px;
-    left: 0px;
+    top: -38px;
+    left: -89px;
     z-index: -1;
     background-image: url("../assets/images/about__dragon.png");
     background-size: cover;
