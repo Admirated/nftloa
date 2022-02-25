@@ -1,0 +1,52 @@
+.become {
+   .about__wrapper {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 60px;
+   }
+   h1 {
+      margin-bottom: 15px;
+   }
+   &__dragons {
+      display: flex;
+      gap: 20px;
+   }
+   &__dragon {
+      position: relative;
+      &:first-child {
+         min-width: 422px;
+         height: 422px;
+         bottom: 120px;
+         &::before {
+            content: "";
+            position: absolute;
+            top: -170px;
+            left: -422px;
+            background-image: url('../assets/images/become__green.png');
+            width: 422px;
+            height: 422px;
+         }
+      }
+      &:last-child {
+         min-width: 486px;
+         height: 410px;
+         bottom: 100px;
+         &::after {
+            content: "";
+            position: absolute;
+            top: -170px;
+            right: -320px;
+            background-image: url('../assets/images/become__purple.png');
+            width: 422px;
+            height: 422px;
+         }
+      }
+   }
+   &__main {
+      position: relative;
+      left: 20px;
+      min-width: 534px;
+      height: 534px;
+   }
+}

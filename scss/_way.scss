@@ -1,0 +1,27 @@
+.way {
+   padding-bottom: 150px;
+
+   .about__wrapper {
+      flex-wrap: wrap;
+      gap: 90px;
+   }
+   &__image {
+      width: 550px;
+      height: 300px;
+   }
+   &__text {
+      max-width: 48%;
+   }
+   &__block {
+      h2 {
+         margin-left: 20px;
+      }
+      &:nth-child(even) {
+         position: relative;
+         top: 150px;
+      }
+      &:last-child {
+         left: 50px;
+      }
+   }
+}
