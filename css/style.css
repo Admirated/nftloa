@@ -661,20 +661,22 @@ img {
   .mobile {
     display: block !important;
   }
-  .about__dragon {
+  .about__dragon-mobile {
     position: relative;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 408px;
-    width: 447px;
+    width: 408px;
   }
-  .about__dragon::after {
-    content: "";
+  .about__dragon-mobile img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
     position: absolute;
-    inset: 0px;
-    top: -38px;
-    left: -89px;
-    z-index: -1;
-    background-image: url("../assets/images/about__dragon.png");
-    background-size: cover;
+    left: -38px;
   }
   .header {
     margin-top: 40px;
