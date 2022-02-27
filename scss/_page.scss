@@ -10,11 +10,29 @@ body {
    padding: 50px 5px 40px;
    margin: 0 auto;
 }
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 9;
+}
 .container {
    max-width: 100%;
 }
 .hide {
    display: none;
+}
+section[data-page] {
+   position: relative;
+   bottom: 250px;
+   opacity: 0;
+   transition: all 1s ease-in-out;
+   &._active {
+      bottom: 0;
+      opacity: 1;
+   }
 }
 button.gold__btn {
    background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
