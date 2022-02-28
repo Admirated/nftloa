@@ -226,7 +226,7 @@
                   right: 110px;
                   height: 1px;
                   background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-                  background-size: 10px 5px;
+                  background-size: 5px 5px;
                }
                padding-left: 0;
                .stage {
@@ -261,7 +261,7 @@
                   right: 110px;
                   height: 1px;
                   background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-                  background-size: 10px 5px;
+                  background-size: 5px 5px;
                }
             }
             &:nth-child(5) {
@@ -274,7 +274,7 @@
                   right: 110px;
                   height: 1px;
                   background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-                  background-size: 10px 5px;
+                  background-size: 5px 5px;
                }
                .stage {
                   left: 100px;
@@ -295,6 +295,8 @@
             color: #EA9F3F;
          }
          &__interesting {
+            position: relative;
+            right: 10px;
             margin: 60px auto 0;
          }
       }

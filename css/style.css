@@ -1351,7 +1351,7 @@ img {
     height: 1px;
     background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
     background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-    background-size: 10px 5px;
+    background-size: 5px 5px;
   }
   .roadmap .road__part:nth-child(4) .stage {
     left: unset;
@@ -1386,7 +1386,7 @@ img {
     height: 1px;
     background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
     background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-    background-size: 10px 5px;
+    background-size: 5px 5px;
   }
   .roadmap .road__part:nth-child(5) {
     width: calc(100% - 20px);
@@ -1400,7 +1400,7 @@ img {
     height: 1px;
     background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
     background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
-    background-size: 10px 5px;
+    background-size: 5px 5px;
   }
   .roadmap .road__part:nth-child(5) .stage {
     left: 100px;
@@ -1420,6 +1420,8 @@ img {
     color: #EA9F3F;
   }
   .roadmap .road__interesting {
+    position: relative;
+    right: 10px;
     margin: 60px auto 0;
   }
   .team__wrapper {
