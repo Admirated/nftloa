@@ -10,7 +10,6 @@
       padding-left: 50px;
       display: flex;
       flex-wrap: wrap;
-      align-items: flex-start;
       justify-content: space-between;
    }
    .road {
@@ -76,6 +75,7 @@
             border-bottom-left-radius: 200px;
             border-top-left-radius: 200px;
             padding-left: 250px;
+            align-self: baseline;
             .stage {
                left: 225px;
             }

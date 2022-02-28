@@ -927,9 +927,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1009,6 +1006,8 @@ img {
   border-bottom-left-radius: 200px;
   border-top-left-radius: 200px;
   padding-left: 250px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .roadmap .road__part:nth-child(5) .stage {
