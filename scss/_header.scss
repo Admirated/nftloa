@@ -66,6 +66,7 @@
 .navigation-item._active {
    a {
       color: var(--yellow);
+      text-shadow: 1px 1px 0px rgba(26, 12, 2, 0.5);
       border-bottom: 1px solid var(--yellow);
    }
 }

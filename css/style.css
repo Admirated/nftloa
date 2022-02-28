@@ -334,6 +334,7 @@ img {
 
 .navigation-item._active a {
   color: var(--yellow);
+  text-shadow: 1px 1px 0px rgba(26, 12, 2, 0.5);
   border-bottom: 1px solid var(--yellow);
 }
 
@@ -910,6 +911,201 @@ img {
   background: rgba(0, 0, 0, 0.95);
 }
 
+.roadmap__wrapper {
+  padding-top: 50px;
+  margin-bottom: 120px;
+}
+
+.roadmap__wrapper h1 {
+  margin-bottom: 0;
+}
+
+.roadmap__road {
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.roadmap .road__part {
+  padding-top: 130px;
+  padding-bottom: 40px;
+  width: 50%;
+  position: relative;
+}
+
+.roadmap .road__part .stage {
+  position: absolute;
+  bottom: -32.5px;
+  left: -25px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
+  -webkit-box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
+          box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.roadmap .road__part .stage:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.roadmap .road__part:nth-child(3) {
+  border-top: 2px dashed #D9D8D8;
+  padding-left: 100px;
+}
+
+.roadmap .road__part:nth-child(3) .stage {
+  left: 75px;
+}
+
+.roadmap .road__part:nth-child(4) {
+  border: 2px dashed #D9D8D8;
+  border-left: none;
+  padding-left: 50px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.roadmap .road__part:nth-child(4) .stage {
+  left: 25px;
+}
+
+.roadmap .road__part:nth-child(5) {
+  width: calc(100% - 470px);
+  position: relative;
+  bottom: 2px;
+  border: 2px dashed #D9D8D8;
+  border-right: none;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px;
+  padding-left: 250px;
+}
+
+.roadmap .road__part:nth-child(5) .stage {
+  left: 225px;
+}
+
+.roadmap .road__part p {
+  margin-bottom: 30px;
+}
+
+.roadmap .road__date {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #EA9F3F;
+  opacity: 0.8;
+}
+
+.roadmap .road__telegram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: -22px;
+  right: -16px;
+  -webkit-transform: rotate(23.97deg);
+          transform: rotate(23.97deg);
+  color: #EA9F3F;
+}
+
+.roadmap .road__interesting {
+  margin-left: 40px;
+  margin-top: 130px;
+  padding: 35px;
+  text-align: center;
+  border: 1px solid #EA9F3F;
+  border-radius: 10px;
+}
+
+.roadmap .road__interesting h2 {
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.roadmap .road__interesting p {
+  margin-bottom: 30px;
+}
+
+.team__wrapper {
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+
+.team__item {
+  margin-bottom: 40px;
+}
+
+.team__image {
+  width: 400px;
+  height: 450px;
+  border: 1px solid #FFFFFF;
+  -webkit-filter: drop-shadow(-10px -10px 20px rgba(234, 197, 64, 0.2)) drop-shadow(10px 10px 20px rgba(234, 197, 64, 0.2));
+          filter: drop-shadow(-10px -10px 20px rgba(234, 197, 64, 0.2)) drop-shadow(10px 10px 20px rgba(234, 197, 64, 0.2));
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.team__image img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  margin-bottom: 5px;
+}
+
+.team__position {
+  color: var(--yellow);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  letter-spacing: 0em;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 576px) {
   .desktop {
     display: none !important;
@@ -1051,7 +1247,7 @@ img {
     height: 200px;
   }
   .footer__wrapper {
-    padding: 20px 20px 40px;
+    padding: 20px 20px 30px;
   }
   .footer__logo {
     position: absolute;
@@ -1065,16 +1261,16 @@ img {
         align-self: flex-end;
   }
   .footer__item {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
   .footer__navigation {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .footer__navigation .navigation {
     padding-left: 0;
@@ -1087,7 +1283,18 @@ img {
     letter-spacing: 0em;
   }
   .footer__navigation .navigation__items-wrapper {
-    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0px;
+    overflow: hidden;
+    height: unset;
+  }
+  .footer__navigation .navigation__items-wrapper .navigation-item {
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  .footer__rights {
+    margin-top: 10px;
   }
   .footer__rights address {
     -webkit-box-orient: vertical;
@@ -1100,5 +1307,157 @@ img {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0em;
+  }
+  .roadmap__wrapper {
+    margin-bottom: 80px;
+  }
+  .roadmap__road {
+    padding-left: 20px;
+  }
+  .roadmap .road__part {
+    width: calc(100% - 10px);
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+  .roadmap .road__part p {
+    margin-bottom: 15px;
+  }
+  .roadmap .road__part .stage {
+    width: 38px;
+    height: 38px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    left: 0;
+    bottom: -19px;
+  }
+  .roadmap .road__part .stage:after {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+  }
+  .roadmap .road__part:nth-child(4) {
+    border: none;
+    border-right: 2px dashed #D9D8D8;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    padding-left: 0;
+  }
+  .roadmap .road__part:nth-child(4):before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    right: 110px;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
+    background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
+    background-size: 10px 5px;
+  }
+  .roadmap .road__part:nth-child(4) .stage {
+    left: unset;
+    right: 100px;
+    bottom: -19px;
+  }
+  .roadmap .road__part:nth-child(2) {
+    border: 2px dashed #D9D8D8;
+    border-left: none;
+    border-bottom: none;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+  .roadmap .road__part:nth-child(2) .stage {
+    left: unset;
+    right: 100px;
+    bottom: -19px;
+  }
+  .roadmap .road__part:nth-child(3), .roadmap .road__part:nth-child(5) {
+    padding-left: 60px;
+    border: none;
+    border-left: 2px dashed #D9D8D8;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+  }
+  .roadmap .road__part:nth-child(3):before, .roadmap .road__part:nth-child(5):before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    right: 110px;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
+    background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
+    background-size: 10px 5px;
+  }
+  .roadmap .road__part:nth-child(5) {
+    width: calc(100% - 20px);
+  }
+  .roadmap .road__part:nth-child(5):after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 110px;
+    right: 110px;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#696868), color-stop(75%, #696868), color-stop(75%, transparent), to(transparent));
+    background-image: linear-gradient(90deg, #696868, #696868 75%, transparent 75%, transparent 100%);
+    background-size: 10px 5px;
+  }
+  .roadmap .road__part:nth-child(5) .stage {
+    left: 100px;
+  }
+  .roadmap .road__date {
+    font-size: 0.9375rem;
+    line-height: 1.0925rem;
+  }
+  .roadmap .road__telegram {
+    width: 43px;
+    height: 36px;
+    bottom: -18px;
+    left: calc(100% - 130px);
+    right: unset;
+    -webkit-transform: rotate(40.59deg);
+            transform: rotate(40.59deg);
+    color: #EA9F3F;
+  }
+  .roadmap .road__interesting {
+    margin: 60px auto 0;
+  }
+  .team__wrapper {
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .team__item {
+    margin-bottom: 10px;
+  }
+  .team__text {
+    max-width: 150px;
+  }
+  .team__image {
+    width: 150px;
+    height: 170px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+  .team__image img {
+    border-radius: 2px;
+  }
+  .team__name {
+    width: 100%;
+    font-size: 0.8125rem;
+    line-height: 0.975rem;
+    margin-bottom: 1px;
+  }
+  .team__position {
+    font-size: 0.625rem;
+    line-height: 0.6875rem;
   }
 }

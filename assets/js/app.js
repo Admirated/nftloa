@@ -8,15 +8,14 @@ window.addEventListener('DOMContentLoaded', () => {
       navItems = document.querySelectorAll('.navigation-item');
 
    if (!padeId) {
-      document.querySelector('section[data-page="dragons"]').classList.add('_active');;
-      document.querySelectorAll('.navigation-item[data-page="dragons"]')
+      const page = document.querySelector('section[data-page="about"]')
+      activatePage(page);
+      document.querySelectorAll('.navigation-item[data-page="about"]')
          .forEach(link => link.classList.add('_active'));
    } else {
       pages.forEach(page => {
          if (page.dataset.page === padeId) {
-            page.classList.add('_active');
-         } else {
-            page.classList.add('hide');
+            activatePage(page);
          }
       });
    }
@@ -59,10 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
             page.classList.remove('_active');
             page.classList.add('hide');
          } else {
-            page.classList.remove('hide');
-            setTimeout(() => {
-               page.classList.add('_active');
-            }, 4);
+            activatePage(page);
             document.querySelectorAll(`.navigation-item[data-page="${pageId}"]`)
                .forEach(link => link.classList.add('_active'));
          }
@@ -81,3 +77,10 @@ window.addEventListener('DOMContentLoaded', () => {
    }
 
 });
+
+function activatePage(page) {
+   page.classList.remove('hide');
+   setTimeout(() => {
+      page.classList.add('_active');
+   }, 4);
+}
