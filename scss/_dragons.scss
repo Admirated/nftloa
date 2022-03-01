@@ -1,0 +1,130 @@
+.dragons {
+   &__wrapper {
+   }
+   &__item {
+      display: flex;
+      justify-content: center;
+      p {
+         margin-bottom: 20px;
+      }
+   }
+   &__item-text {
+      width: 50%;
+   }
+   .caption {
+   }
+   &__list-wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 250px;
+      justify-content: space-between;
+   }
+   &__item-image {
+      width: fit-content;
+      &.mob {
+         display: none;
+      }
+   }
+   &__kinds {
+      h1 {
+         text-align: center;
+         margin-bottom: 80px;
+      }
+      .dragons__item-text {
+         max-width: 65%;
+      }
+      .dragons__item.right-img {
+         position: relative;
+         left: 100px;
+      }
+   }
+   .dragon {
+      &__up {
+         position: relative;
+         bottom: 120px;
+         right: 100px;
+      }
+      &__left {
+         position: relative;
+         right: 100px;
+      }
+      &__description {
+         margin-bottom: 20px;
+         &-item {
+            display: flex;
+            gap: 20px;
+            .caption {
+               text-transform: uppercase;
+            }
+         }
+      }
+      &__text {
+         width: 510px;
+         &.big {
+            width: 555px;
+         }
+      }
+   }
+   &__title {
+      position: relative;
+      margin-bottom: 40px;
+      span {
+         position: absolute;
+         bottom: -15px;
+         left: -100px;
+         z-index: 2;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 65px;
+         height: 65px;
+         background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
+         box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
+         border-radius: 50%;
+         font-size: 36px;
+         font-weight: 600;
+         line-height: 36px;
+         letter-spacing: 0.02em;
+         &:after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            bottom: 4px;
+            right: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+         }
+      }
+      h2 {
+         white-space: nowrap;
+      }
+   }
+   &__types {
+      padding-bottom: 100px;
+   }
+   &__types-wrapper {
+      display: flex;
+      justify-content: center;
+   }
+   &__types-item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   &__types-image {
+      margin-bottom: 40px;
+   }
+   .stars {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-grow: 1;
+      img {
+         height: fit-content;
+         width: fit-content;
+      }
+   }
+}

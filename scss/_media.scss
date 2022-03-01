@@ -336,4 +336,124 @@
          line-height: 0.6875rem;
       }
    }
+
+   .dragons {
+      &__item {
+         flex-direction: column;
+         &:nth-child(2) {
+            .dragons__title {
+               span {
+                  bottom: 10px;
+               }
+            }
+         }
+         &.mb100 {
+            margin-bottom: 40px;
+         }
+      }
+      &__item-text {
+         width: 100%;
+      }
+      &__item-image {
+         &.pc {
+            display: none;
+         }
+         &.mob {
+            display: block;
+            max-width: 305px;
+            width: 100%;
+            position: relative;
+            bottom: 20px;
+            margin: 0 auto;
+         }
+      }
+      &__kinds {
+         h1 {
+            text-align: center;
+            margin-bottom: 80px;
+         }
+         .dragons__item-text {
+            max-width: 100%;
+         }
+         .dragons__item.right-img {
+            position: relative;
+            left: 0px;
+         }
+      }
+      .dragon {
+         &__up {
+            position: relative;
+            bottom: 20px;
+            right: 0px;
+         }
+         &__left {
+            position: relative;
+            right: 0px;
+         }
+         &__description {
+            margin-bottom: 0px;
+         }
+         &__text {
+            width: 100%;
+            &.big {
+               width: unset;
+            }
+         }
+      }
+      &__title {
+         display: flex;
+         align-items: flex-start;
+         position: relative;
+         padding-left: 70px;
+         margin-bottom: 40px;
+         span {
+            bottom: 30px;
+            left: 20px;
+            z-index: 2;
+            width: 38px;
+            height: 38px;
+            font-size: 20px;
+            line-height: 20px;
+            &:after {
+               top: 2px;
+               left: 2px;
+               bottom: 2px;
+               right: 2px;
+            }
+         }
+         h2 {
+            max-width: 250px;
+            white-space: normal;
+         }
+      }
+      &__types {
+         padding-bottom: 0px;
+         margin-bottom: 30px;
+      }
+      &__types-wrapper {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+      &__types-item {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+      }
+      &__types-image {
+         margin-bottom: 40px;
+      }
+      .stars {
+         margin-top: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+         flex-grow: 1;
+         img {
+            height: fit-content;
+            width: fit-content;
+         }
+      }
+   }
+   
 }
