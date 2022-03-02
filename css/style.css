@@ -172,7 +172,12 @@ section[data-page]._active {
   opacity: 1;
 }
 
-button.gold__btn {
+.gold__btn {
+  height: 44px;
+}
+
+.gold__btn a {
+  font-family: Rubik, sans-serif;
   background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
   -webkit-box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
           box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
@@ -185,9 +190,11 @@ button.gold__btn {
   border: none;
   cursor: pointer;
   position: relative;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-button.gold__btn::after {
+.gold__btn a::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -712,6 +719,10 @@ img {
 
 .way__block:last-child {
   left: 50px;
+}
+
+.become .gold__btn {
+  padding-top: 20px;
 }
 
 .become .about__wrapper {
@@ -1741,7 +1752,7 @@ img {
     min-width: 223px;
     height: 223px;
   }
-  .become .gold__btn {
+  .become .gold__btn a {
     position: absolute;
     width: 80%;
     left: 10%;

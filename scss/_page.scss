@@ -34,29 +34,36 @@ section[data-page] {
       opacity: 1;
    }
 }
-button.gold__btn {
-   background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
-   box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
-   border-radius: 30px;
-   padding: 23px 64px;
-   color: #fff;
-   line-height: 1.2rem;
-   letter-spacing: 0.1em;
-   outline: none;
-   border: none;
-   cursor: pointer;
-   position: relative;
-   &::after {
-      content: "";
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      bottom: 4px;
-      left: 4px;
-      opacity: 0.5;
-      border: 1px solid #FFFFFF;
-      box-sizing: border-box;
+
+.gold__btn {
+   height: 44px;
+   a {
+      font-family: Rubik, sans-serif;
+      background: linear-gradient(274.65deg, rgba(233, 103, 94, 0.54) 5.21%, rgba(233, 128, 94, 0) 54.5%), radial-gradient(33.45% 113.08% at 27.73% -13.08%, #F7E89D 0%, rgba(247, 216, 157, 0) 100%), radial-gradient(29.58% 100% at 39.32% 0%, #F7E89D 0%, rgba(247, 232, 157, 0) 100%), linear-gradient(90deg, #EB9938 -7.05%, #ECC22D 112.05%);
+      box-shadow: 1px 2px 2px rgba(232, 88, 43, 0.5), 3px 5px 5px rgba(232, 186, 96, 0.5), inset 2px 2px 2px #F2CDAB;
       border-radius: 30px;
+      padding: 23px 64px;
+      color: #fff;
+      line-height: 1.2rem;
+      letter-spacing: 0.1em;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      font-weight: 600;
+      font-size: 1rem;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 4px;
+         right: 4px;
+         bottom: 4px;
+         left: 4px;
+         opacity: 0.5;
+         border: 1px solid #FFFFFF;
+         box-sizing: border-box;
+         border-radius: 30px;
+      }
    }
 }
 img {

@@ -119,10 +119,12 @@
          height: 223px;
       }
       .gold__btn {
-         position: absolute;
-         width: 80%;
-         left: 10%;
-         bottom: -100px;
+         a {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            bottom: -100px;
+         }
       }
    }
 
