@@ -76,7 +76,31 @@ window.addEventListener('DOMContentLoaded', () => {
       loader.style.display = 'none';
    }
 
+   const copyBtn = document.querySelector('.copyBtn');
+   const address = document.querySelector('p.address').textContent;
+   copyBtn.addEventListener('click', () => setClipboard(address, copyBtn));
+
+
 });
+
+function setClipboard(text, btn) {
+   var type = "text/plain";
+   var blob = new Blob([text], {
+      type
+   });
+   var data = [new ClipboardItem({
+      [type]: blob
+   })];
+
+   navigator.clipboard.write(data).then(
+      function () {
+         btn.classList.add('success');
+         setTimeout(() => {
+            btn.classList.remove('success');
+         }, 2500);
+      }
+   );
+}
 
 function activatePage(page) {
    page.classList.remove('hide');
